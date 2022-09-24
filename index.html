@@ -10,16 +10,23 @@
 <body>
     <h1>Лаба1</h1>
     <p>Введите слово:</p>
-    <input type="text" id="text" value="пример шифрования">
+    <input type="text" id="text" value="">
     <p>Введите сдвиг:</p>
-    <input type="text" id="slip" value="2">
+    <input type="text" id="slip" value="">
     <p>Введите ключ:</p>
-    <input type="text" id="key-word" value="ключ">
+    <input type="text" id="key-word" value="">
     <p>Получившийся шифр:</p>
     <div id="output-encoded"></div>
     <p>Расшифрованное сообщение:</p>
     <div id="output-decoded"></div>
 
+    <input type="file" id="file">
+    <button onclick="readFile(document.getElementById('file'))">Read!</button>
+    <div id="out"></div>
+    <button id="button">Зашифровать</button>
+
     <script src="code.js"></script>
+
+   
 </body>
 </html>
